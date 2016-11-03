@@ -3,7 +3,7 @@
     
     <head>
         <meta charset="utf-8">
-        <title>HTML Academy: Седона</title>
+        <title>HTML Academy: Седона. Гостиницы</title>
         
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -11,37 +11,37 @@
     <body>
         <header class="main-header">
             <nav class="main-navigation">
-                <img class="logo" src="img/logo.png" alt="City of Sedona">
                 <ul>
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
                     <li><a href="#">Карта штата</a></li>
-                    <li><a href="#">Гостиницы</a></li>
+                    <li><a>Гостиницы</a></li>
                 </ul>
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="City of Sedona"></a>
             </nav>
         </header>
         
         <main>
             <div class="filter">
                 <form class="filter-form" action="#" method="post">
-					<div class="infrastructure">
-						<p>Инфраструктура:</p>
+					<fieldset class="infrastructure">
+						<legend>Инфраструктура:</legend>
 						<label><input type="checkbox" name="pool" checked>Бассейн</label>
 						<label><input type="checkbox" name="parking">Парковка</label>
 						<label><input type="checkbox" name="wi-fi">Wi-Fi</label>
-					</div>
-					<div class="hotel">
-						<p>Тип жилья:</p>
+					</fieldset>
+					<fieldset class="hotel">
+						<legend>Тип жилья:</legend>
 						<label><input type="checkbox" name="hotel" checked>Гостиница</label>
 						<label><input type="checkbox" name="motel" checked>Мотель</label>
 						<label><input type="checkbox" name="apartments" checked>Аппартаменты</label>
-					</div>
-					<div class="price">
-						<p>Стоимость в сутки (р):</p>
+					</fieldset>
+					<fieldset class="price">
+						<legend>Стоимость в сутки (р):</legend>
 						<input class="search-price-start" type="text" name="start" placeholder="от 0">
 						<input class="search-price-end" type="text" name="end" placeholder="до 3000">
 						<div class="search-price-slider"></div>
-					</div>
+					</fieldset>
 					
 						<button class="search-btn" type="submit">Показать</button>
 					
@@ -61,17 +61,13 @@
             </ul>
         </div>
         <div class="result-sort-btns">
-            <a class="filter_up" href="#">
-                <img class="up" src="img/up-blocked.svg" alt="up">
-            </a>
-            <a class="filter_down" href="#">
-                <img class="down" src="img/down.svg" alt="down">
-            </a>
+            <a class="filter_up" href="#">сортировка от начала к концу</a>
+            <a class="filter_down" href="#">сортировка от конца к началу</a>
         </div>
     </div>
 
-    <div class="search-results-content">
-        <div class="search-result-card">
+    <ul class="search-results-content">
+        <li class="search-result-card">
             <div class="result-card-image">
                 <img class="amara" src="img/amara.jpg" alt="Amara">
             </div>
@@ -87,16 +83,19 @@
                 </div>
             </div>
             <div class="result-card-ratings">
-                <div class="ratings-stars">
-                    <img class="four.stars" src="img/stars-four.svg" alt="four stars">
-                </div>
+                <ul class="ratings-stars">
+                    <li><img class="stars" src="img/stars.svg" alt="stars"></li>
+                    <li><img class="stars" src="img/stars.svg" alt="stars"></li>
+                    <li><img class="stars" src="img/stars.svg" alt="stars"></li>
+                    <li><img class="stars" src="img/stars.svg" alt="stars"></li>
+                </ul>
                 <div class="rating-level">
                     <span>Рейтинг: 8,5</span>
                 </div>
             </div>
-        </div>
+        </li>
 
-        <div class="search-result-card">
+        <li class="search-result-card">
             <div class="result-card-image">
                 <img class="desert" src="img/desert.jpg" alt="Desert">
             </div>
@@ -112,16 +111,17 @@
                 </div>
             </div>
             <div class="result-card-ratings">
-                <div class="ratings-stars">
-                    <img class="two-stars" src="img/stars-two.svg" alt="two stars">
-                </div>
+                <ul class="ratings-stars">
+                    <li><img class="stars" src="img/stars.svg" alt="stars"></li>
+                    <li><img class="stars" src="img/stars.svg" alt="stars"></li>
+                </ul>
                 <div class="rating-level">
                     <span>Рейтинг: 8,9</span>
                 </div>
             </div>
-        </div>
+        </li>
 
-        <div class="search-result-card">
+        <li class="search-result-card">
             <div class="result-card-image">
                 <img class="villas" src="img/villas.jpg" alt="Villas">
             </div>
@@ -137,15 +137,17 @@
                 </div>
             </div>
             <div class="result-card-ratings">
-                <div class="ratings-stars">
-                    <img class="tree-stars" src="img/stars-tree.svg" alt="tree stars">
-                </div>
+                <ul class="ratings-stars">
+                    <li><img class="stars" src="img/stars.svg" alt="stars"></li>
+                    <li><img class="stars" src="img/stars.svg" alt="stars"></li>
+                    <li><img class="stars" src="img/stars.svg" alt="stars"></li>
+                </ul>
                 <div class="rating-level">
                     <span>Рейтинг: 9,2</span>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
         </main>
         
         <footer class="main-footer">
