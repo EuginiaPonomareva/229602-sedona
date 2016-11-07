@@ -17,7 +17,7 @@
                     <li><a href="#">Карта штата</a></li>
                     <li><a href="catalog.html">Гостиницы</a></li>
                 </ul>
-                <img class="logo" src="img/logo.png" alt="City of Sedona">
+                <a class="logo">City of Sedona</a>
             </nav>
         </header>
         
@@ -31,13 +31,16 @@
                 <span class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
                 <div class="reason-and-features">
                     <div class="reason">
-                        <div class="sedona-town-block">
+                        <div class="block sedona-town">
                             <h2 class="reason-title">Настоящий городок</h2>
                             <span class="reason-nmb">№1</span>
-                            <p class="reason-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
-                            <img class="sedona-town" src="img/sedona-town.jpg" alt="Город Седона">
+                            <p class="reason-text">
+                                Седона — не аттракцион для туристов, там течет своя жизнь
+                            </p>
                         </div>
+                        <img class="sedona-town" src="img/sedona-town.jpg" alt="Город Седона">
                     </div>
+
                     
                     <div class="features">
                         <div class="features-column">
@@ -57,12 +60,12 @@
                     </div>
                     
                     <div class="reason">
-                        <div class="devils-bridge-block">
+                        <div class="block devils-bridge">
                             <h2 class="reason-title">Там есть Мост Дьявола</h2>
-                            <img class="devils-bridge" src="img/devils-bridge.jpg" alt="Мост дьявола">
                             <span class="reason-nmb">№2</span>
                             <p class="reason-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
                         </div>
+                        <img class="devils-bridge" src="img/devils-bridge.jpg" alt="Мост дьявола">
                     </div>
                     
                     <div class="reason">
@@ -98,16 +101,16 @@
                 <a href="#" class="search-btn">Поиск гостиницы в Седоне</a>
                 <form class="search-form" action="#" method="post">
                     <div class="form-group">
+                        <label for="checkin">Дата заезда</label>
                         <div class="checkin">
-                            <label for="checkin">Дата заезда</label>
                             <input id="checkin" type="text">
                             <i class="icon icon-calendar"></i>
                         </div>
                     </div>
                     
                     <div class="form-group">
+                        <label for="checkout">Дата выезда</label>
                         <div class="checkout">
-                            <label for="checkout">Дата выезда</label>
                             <input id="checkout" type="text">
                             <i class="icon icon-calendar"></i>
                         </div>
