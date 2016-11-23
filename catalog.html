@@ -26,27 +26,27 @@
         
         <main>
             <div class="filter">
-                <form class="filter-form" action="#" method="post">
+                <form class="filter-form clearfix" action="#" method="post">
 					<fieldset class="infrastructure">
 						<legend>Инфраструктура:</legend>
-						<label><input type="checkbox" name="pool" checked>Бассейн</label>
-						<label><input type="checkbox" name="parking">Парковка</label>
-						<label><input type="checkbox" name="wi-fi">Wi-Fi</label>
+						<input id="pool" type="checkbox" name="pool" checked><label for="pool">Бассейн</label>
+						<input id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label>
+						<input id="wi-fi" type="checkbox" name="wi-fi"><label for="wi-fi">Wi-Fi</label>
 					</fieldset>
 					<fieldset class="hotel">
 						<legend>Тип жилья:</legend>
-						<label><input type="checkbox" name="hotel" checked>Гостиница</label>
-						<label><input type="checkbox" name="motel" checked>Мотель</label>
-						<label><input type="checkbox" name="apartments" checked>Аппартаменты</label>
+						<input id="hotel" type="checkbox" name="hotel" checked><label for="hotel">Гостиница</label>
+						<input id="motel" type="checkbox" name="motel" checked><label for="motel">Мотель</label>
+						<input id="apartments" type="checkbox" name="apartments" checked><label for="apartments">Аппартаменты</label>
 					</fieldset>
 					<fieldset class="price">
 						<legend>Стоимость в сутки (р):</legend>
                         <div class="price-range-field">
                             <label for="start">От</label>
-                            <input id="start" type="text" name="min-price" value="0">
+                            <input class="min-prace" id="start" type="text" name="min-price" value="0">
                             
                             <label for="end">До</label>
-                            <input id="end" type="text" name="max-price" value="3000">
+                            <input class="max-prace" id="end" type="text" name="max-price" value="3000">
                         </div>
 						<div class="price-range-slider">
                             <div class="slider-fullbar">
@@ -57,7 +57,7 @@
                         </div>
 					</fieldset>
 					
-						<button class="search-btn" type="submit">Показать</button>
+					<button class="filter-btn" type="submit">Показать</button>
                 </form>
             </div>
             
@@ -77,21 +77,23 @@
             </div>
         </div>
             
-            <ul class="search-results-content">
+            <ul class="search-results-content"> 
                 <li class="search-result-card">
-                    <div class="result-card-image">
+                    <div class="result-card-image"> 
                         <img class="amara" src="img/amara.jpg" alt="Amara">
                     </div>
                     <div class="result-card-description">
                         <h2 class="card-title"><a href="#">Amara Resort &amp; SPA</a></h2>
-                        <div class="type-and-more">
-                            <span>Гостиница</span>
-                            <a class="card-more" href="#">Подробнее</a>
-                        </div>
-                        <div class="price-and-book">
-                            <span>от 3500 Р.</span>
-                            <a class="card-book" href="#">Забронировать</a>
-                        </div>
+						<div class="result-info">
+							<div class="type-and-more">
+								<span>Гостиница</span>
+								<a class="card-more" href="#">Подробнее</a>
+							</div>
+							<div class="price-and-book">
+								<span>от 3500 Р.</span>
+								<a class="card-book" href="#">Забронировать</a>
+							</div>
+						</div>
                     </div>
                     <div class="result-card-ratings">
                         <ul class="ratings-stars">
@@ -112,14 +114,16 @@
                     </div>
                     <div class="result-card-description">
                         <h2 class="card-title"><a href="#">Desert Quail Inn</a></h2>
-                        <div class="type-and-more">
-                            <span>Мотель</span>
-                            <a class="card-more" href="#">Подробнее</a>
-                        </div>
-                        <div class="price-and-book">
-                            <span>от 2000 Р.</span>
-                            <a class="card-book" href="#">Забронировать</a>
-                        </div>
+						<div class="result-info">
+							<div class="type-and-more">
+								<span>Мотель</span>
+								<a class="card-more" href="#">Подробнее</a>
+							</div>
+							<div class="price-and-book">
+								<span>от 2000 Р.</span>
+								<a class="card-book" href="#">Забронировать</a>
+							</div>
+						</div>
                     </div>
                     <div class="result-card-ratings">
                         <ul class="ratings-stars">
@@ -138,14 +142,16 @@
                     </div>
                     <div class="result-card-description">
                         <h2 class="card-title"><a href="#">Villas at Poco Diablo</a></h2>
-                        <div class="type-and-more">
-                            <span>Апартаменты</span>
-                            <a class="card-more" href="#">Подробнее</a>
-                        </div>
-                        <div class="price-and-book">
-                            <span>от 4000 Р.</span>
-                            <a class="card-book" href="#">Забронировать</a>
-                        </div>
+						<div class="result-info">
+							<div class="type-and-more">
+								<span>Апартаменты</span>
+								<a class="card-more" href="#">Подробнее</a>
+							</div>
+							<div class="price-and-book">
+								<span>от 4000 Р.</span>
+								<a class="card-book" href="#">Забронировать</a>
+							</div>
+						</div>
                     </div>
                     <div class="result-card-ratings">
                         <ul class="ratings-stars">
@@ -160,6 +166,8 @@
                 </li>
             </ul>
             </main>
+			
+
             
             <footer class="main-footer">
                 <div class="container">
@@ -178,7 +186,7 @@
                         <a class="html-logo" href="https://htmlacademy.ru">HTML Academy</a>
                     </div>
                 </div>
-            </footer>
+            </footer> 
         </div>
     </body>
 </html>
